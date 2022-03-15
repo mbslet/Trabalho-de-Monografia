@@ -6,18 +6,35 @@
         de Interface de Usuário:</h1>
         <h2 class="subtitle">Um guia de aplicações</h2>
     </div>
+   <div class="center-con">
+    
+    <div>
+        <animated-button @click="getCards()" href="#anchor"/>
+    </div>
+
+
+
+    
+</div>
 </div>
 </template>
 
 <script>
 import Topbar from './Topbar.vue'
+import AnimatedButton from './animatedButton.vue'
+import HelloWorld from './HelloWorld.vue'
 
 export default {
-  components: { Topbar },
+  components: { Topbar, AnimatedButton },
   name: 'LandingPage',
 
   componets: {
       Topbar,
+  },
+  methods: {
+      getCards(){
+          this.$router.push({ name: HelloWorld})
+      }
   }
 }
 </script>
@@ -47,4 +64,16 @@ export default {
 .text{
     margin-top: 10vh;
 }
+
+
+.center-con {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: -76vh;
+    margin-left: 120vh;
+}
+
+
 </style>
