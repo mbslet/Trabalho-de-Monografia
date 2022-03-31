@@ -20,9 +20,8 @@
 </template>
 
 <script>
-import Topbar from './Topbar.vue'
-import AnimatedButton from './animatedButton.vue'
-import HelloWorld from './HelloWorld.vue'
+import Topbar from '../components/Topbar.vue'
+import AnimatedButton from '../components/animatedButton.vue'
 
 export default {
   components: { Topbar, AnimatedButton },
@@ -33,14 +32,22 @@ export default {
   },
   methods: {
       getCards(){
-          this.$router.push({ name: HelloWorld})
+          this.$router.push({ path: '/reusablelist'})
       }
   }
 }
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+<style lang="scss">
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background-image: linear-gradient(180deg, #F1853C, #B86E3D);
+  } 
 .title{
     padding: 80px;
     padding-left: 1px;
@@ -75,5 +82,8 @@ export default {
     margin-left: 120vh;
 }
 
+.top-bar{
+    margin-top: -5%;
+}
 
 </style>
