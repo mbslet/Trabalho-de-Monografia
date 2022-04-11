@@ -10,9 +10,6 @@
     <div>
         <animated-button @click="getCards()" href="#anchor"/>
     </div>
-
-
-
     
 </div>
 </div>
@@ -40,6 +37,15 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background-image: linear-gradient(180deg, #F1853C, #B86E3D);
+  overflow: hidden;
+  } 
 .title{
     padding: 80px;
     padding-left: 1px;

@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LandingPage from '../views/LandingPage.vue'
 import ReusableList from '../views/ReusableList.vue'
-
+import SgPage from '../views/SgPage'
+import ColorsPallet from  '../views/ColorsPallet'
+import Tipografia from  '../components/Tipografia'
+import RegraEscrita from '../components/RegraEscrita'
 
 const routes = [
   {
@@ -13,6 +16,26 @@ const routes = [
     path: '/reusablelist',
     name: 'Reusable List',
     component: ReusableList
+  },
+  {
+    path: '/sgpage',
+    name: 'Style Guide Page',
+    component: SgPage
+  },
+  {
+    path: '/colors-pallet',
+    name: 'Paleta de Cores',
+    component: ColorsPallet
+  },
+  {
+    path: '/tipography',
+    name: 'Tipografia',
+    component: Tipografia
+  },
+  {
+    path: '/regras',
+    name: 'Regras de Escritas',
+    component: RegraEscrita
   },
   {
     path: '/about',

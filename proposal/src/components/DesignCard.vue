@@ -1,15 +1,15 @@
 <template>
-     <div class="sg-card">
+     <div class="c-card">
     <Card>
     <template #header>
-       <div class="circulo"></div>
+        <div class="circulo"></div>
     </template>
     <template #title>
-        <h2 class="title">Paleta de Cores</h2>
+        <h2 class="title">Design Funcional</h2>
     </template>
     <template #content>
         <h3 class="subtitle"> Guia de reutilização</h3>
-        <img class="palet" src="../assets/paleta.png" alt="">
+        <img class="da" src="../assets/da.png" >
 
     </template>
     <template #footer>
@@ -24,7 +24,7 @@
 <script>
 
 export default {
-  name: "StyleGuideCard",
+  name: "DesignCard",
   props: {
     title: String,
   },
@@ -39,8 +39,7 @@ export default {
 
 }
 
-.sg-card {
-  display: flex;
+.c-card {
   border-radius: 20px;
   background-color: #EEF0F2;
   padding: 20px;
@@ -66,14 +65,14 @@ export default {
   margin-top: -12vh;
 
 }
-.palet{
+.da{
   width: 30vh;
-  height: 20vh;
+  height: 15vh;
 }
 .circulo {
 width: 30px;
 height: 30px;
 border-radius: 50%;
-background-color: #D16002;
+background-color: #500B0B;
 }
 </style>

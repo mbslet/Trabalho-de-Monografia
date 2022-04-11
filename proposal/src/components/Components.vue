@@ -41,7 +41,7 @@ export default {
 
 .c-card {
   border-radius: 20px;
-  background-color: white;
+  background-color: #EEF0F2;
   padding: 20px;
   height: 40vh;
   width: 30vh;  

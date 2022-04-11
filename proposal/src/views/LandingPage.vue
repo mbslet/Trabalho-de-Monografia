@@ -1,6 +1,8 @@
 <template>
 <div>
-    <Topbar/>
+    <div class="topbar">
+
+      </div>
     <div class="display-flex text">
         <h1 class="title">Modelo de Reutilização
         de Interface de Usuário:</h1>
@@ -20,16 +22,11 @@
 </template>
 
 <script>
-import Topbar from '../components/Topbar.vue'
 import AnimatedButton from '../components/animatedButton.vue'
 
 export default {
-  components: { Topbar, AnimatedButton },
+  components: { AnimatedButton },
   name: 'LandingPage',
-
-  componets: {
-      Topbar,
-  },
   methods: {
       getCards(){
           this.$router.push({ path: '/reusablelist'})
@@ -47,6 +44,7 @@ export default {
   width: 100%;
   min-height: 100%;
   background-image: linear-gradient(180deg, #F1853C, #B86E3D);
+  overflow: hidden;
   } 
 .title{
     padding: 80px;
@@ -82,8 +80,13 @@ export default {
     margin-left: 120vh;
 }
 
-.top-bar{
-    margin-top: -5%;
+.topbar{
+  padding: 20px;
+  width: 100vh;
+  height: 10px;
+  margin-top: -9.5vh;
+  margin-left: -2vh;
+  background-color: #000;
 }
 
 </style>
