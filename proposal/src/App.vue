@@ -2,7 +2,10 @@
   <div class="content">
       <router-link class="home" to="/"> Home </router-link>
       <router-link class="topic" to="/reusablelist"> Tópicos </router-link>
-      <router-link to="/sgpage"> Guia de Estilo </router-link>
+      <router-link class="sgpage" to="/sgpage"> Guia de Estilo </router-link>
+      <router-link class="comp" to="/components-page"> Componentes </router-link>
+      <router-link class="funci" to="/funcional"> Design Funcional </router-link>
+
       <router-view v-slot="{ Component }">
         <transition name="slide">
           <component :is="Component" />
@@ -22,6 +25,9 @@
 }
 
 .content{
+  display: block;
+  
+  align-content: space-between;
   width: 40%;
   min-width: 500px;
   margin: 0;
@@ -29,11 +35,29 @@
   
 }
 .home{
-  margin-left: 75vh;
+  position: fixed;
+  margin-left: 18vh;
 }
-.topic{
-    margin-left: 95vh;
+a.topic{
+    position: fixed;
+    font-size: 16px;
+    margin-left: 30vh;
 
+}
+.sgpage{
+  position: fixed;
+  margin-left: 43vh;
+  margin-top: 0vh;
+}
+.comp{
+    position: fixed;
+
+  margin-left: 63vh;
+  margin-top: 0vh;
+}
+.funci{
+  position: fixed;
+  margin-left: 83vh;
 }
 
 a {

@@ -2,63 +2,73 @@
     <div class="topbar"></div>
 
     <div class="context">
-        Guia de Estilo
+        Componentes
         <div class="bar">
         </div>
         <div class="text">
-            Um guia de estilo serve como base 
-            para o desenvolvimento  <br>e é uma coleção de princípios, 
-            diretrizes e convenções reunidas <br> em um 
-            meio único para definir uma aparência e comportamento<br> unificados para 
-            produtos e serviços, muitos guias de estilo da web<br> tendem
-            não fazer referência aos guias de estilo tradicional,<br> provavelmente devido
-            para a grande diversidade de desenvolvedores da web. <br> Para um guia de estilo ser bem elaborado, deve conter informações sobre
-            as cores escolhidas, tipografia definida, regras de escritas e elementos visuais como ícones e logo.
-        </div>
-       <div>
+           Um componente pode ser um pacote de código a ser desenvolvido de forma independente e entregue como uma unidade, pode ser
+           parte de um código reutilizável na sua interface e desenvolvimento, e pode ter uma ou mais funções dentro do sistema.
+           Os componentes trabalham em conjunto para criar padrões e experiências intuitivas.
+
+           <br>
+           Dentre as características dos componentes, podemos ver as seguintes:
+           <br>
+           <br>
+           <div class="list">
+            <Listbox v-model="selectedCity" :options="list" optionLabel="name" />
+            </div>
+            <br>
+            Nessa seção, vamos aprender um pouco sobre categorização de componentes, como o Design Atômico, 
+            e alguns componentes reutilizáveis já criados e muito utilizados na comunidade, como o Material Design e Prime Vue.
+            <div class="btco">
           <button class="next" @click="goToPage()">Próxima</button>
       </div>
+        </div>        
+       
     </div>
   <div class="layout-topbar">
       
       <div class="sg">
-          <i class="mt" @click="getSg()">Guia de Estilo</i>
+          <i class="mt">Componentes</i>
           <br>
           <br>
           <br>
-            <router-link class="topic" to="/colors-pallet"> Paleta de Cores </router-link>
+            <router-link class="topic" to="/designatomico"> Design Atômico </router-link>
             <br>
             <br>
-            <router-link class="topic" to="/tipography"> Tipografia </router-link>
+            <router-link class="topic" to="/material"> Material Design </router-link>
+            
             <br>
             <br>
-            <router-link class="topic" to="/regras"> Grids </router-link>
-      </div>
+            <router-link class="topic" to="/primevue"> Prime Vue </router-link>
+            <br>
+            <br>
+    </div>
   </div>
 </template>
 
 
 <script>
-
 export default {
     data() {
            return {
-               data: {
-                    items: [
-                        { message: 'Foo' },
-                        { message: 'Bar' }
-                    ]
-                }
+        
+              list: [
+              {name: '◉ Reutilização'},
+              {name: '◉ Flexibilidade'},
+              {name: '◉ Consistência'},
+              {name: '◉ Modularidade'},
+                  ],
+        
         }
     },
-  components: {  },
+  components: { },
   name: "StyleGuidePage",
   methods:{
     goToPage(){
-          this.$router.push({ path: '/colors-pallet'})
+          this.$router.push({ path: '/designatomico'})
       }
   }
-
 }
 </script>
 
@@ -72,19 +82,7 @@ export default {
   height: 100%;
   
   } 
-.btsg{
-  margin-top: 5vh;
-  margin-left: 40vh;
-}
-.next{
-  background-color: #3c6d60;
-  width: 20vh;
-  border-radius: 5px;
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  margin-left: 105vh;
-
-}
+.btco{}
 .layout-topbar {
     position: fixed;
     height: 50px;
@@ -136,7 +134,7 @@ export default {
     color: #292929;
     z-index: 999;
     margin-top: 5vh;
-    margin-left: 55vh;
+    margin-left: 65vh;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 

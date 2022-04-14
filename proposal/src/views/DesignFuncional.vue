@@ -2,44 +2,36 @@
     <div class="topbar"></div>
 
     <div class="context">
-        Guia de Estilo
+        Design Funcional
         <div class="bar">
         </div>
         <div class="text">
-            Um guia de estilo serve como base 
-            para o desenvolvimento  <br>e é uma coleção de princípios, 
-            diretrizes e convenções reunidas <br> em um 
-            meio único para definir uma aparência e comportamento<br> unificados para 
-            produtos e serviços, muitos guias de estilo da web<br> tendem
-            não fazer referência aos guias de estilo tradicional,<br> provavelmente devido
-            para a grande diversidade de desenvolvedores da web. <br> Para um guia de estilo ser bem elaborado, deve conter informações sobre
-            as cores escolhidas, tipografia definida, regras de escritas e elementos visuais como ícones e logo.
+            Design Funcional descreve o que o aplicativo deve ser capaz de fazer e está menos preocupado em como isso é feito.
+            O foco é  colocar todo o conhecimento disponível a serviço do desenvolvimento da interface, seguindo algumas dicas, fica
+            mais fácil criar um projeto funcional.
+    
+
         </div>
-       <div>
-          <button class="next" @click="goToPage()">Próxima</button>
-      </div>
+        <div class="btdf">
+            <button class="next" @click="goToPage()">Próxima</button>
+          </div>
+       
     </div>
   <div class="layout-topbar">
       
       <div class="sg">
-          <i class="mt" @click="getSg()">Guia de Estilo</i>
+          <i class="mt">Design Funcional</i>
           <br>
           <br>
           <br>
-            <router-link class="topic" to="/colors-pallet"> Paleta de Cores </router-link>
+            <router-link class="topic" to="/fundamentos"> Fundamentos </router-link>
             <br>
-            <br>
-            <router-link class="topic" to="/tipography"> Tipografia </router-link>
-            <br>
-            <br>
-            <router-link class="topic" to="/regras"> Grids </router-link>
       </div>
   </div>
 </template>
 
 
 <script>
-
 export default {
     data() {
            return {
@@ -51,14 +43,13 @@ export default {
                 }
         }
     },
-  components: {  },
+  components: { },
   name: "StyleGuidePage",
   methods:{
     goToPage(){
-          this.$router.push({ path: '/colors-pallet'})
+          this.$router.push({ path: '/fundamentos'})
       }
   }
-
 }
 </script>
 
@@ -72,18 +63,9 @@ export default {
   height: 100%;
   
   } 
-.btsg{
-  margin-top: 5vh;
-  margin-left: 40vh;
-}
-.next{
-  background-color: #3c6d60;
-  width: 20vh;
-  border-radius: 5px;
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  margin-left: 105vh;
-
+.btdf{
+  margin-top: 30vh;
+  margin-left: 10vh;
 }
 .layout-topbar {
     position: fixed;
@@ -136,7 +118,7 @@ export default {
     color: #292929;
     z-index: 999;
     margin-top: 5vh;
-    margin-left: 55vh;
+    margin-left: 65vh;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 

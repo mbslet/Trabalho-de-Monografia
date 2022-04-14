@@ -3,75 +3,58 @@
 
     <div class="context">        
         <div>
-          <Panel class="sub-text" header="Tipografia" >
+          <Panel class="sub-text" header="Fundamentos do Design Funcional" >
             <div class="bar"></div>
             <br>
-            A tipografia é muito importante para o seu design e guia de estilo. Uma vez definida no guia, pode ser reutilizada em qualquer projeto.
+            <h3>Usabilidade</h3>
+            O principal objetivo do design funcional é que o design seja facilmente utilizado pelo usuário.<br>
+            É necessário focar na praticidade e objetividade, para que o usuário não gaste muito tempo tentando entender a aplicação.
             <br>
-            <h2>Hierárquia Tipográfica</h2>
-            É muito importante definir uma hierarquia tipográfica, o que é muito comum no
-            meio do design de interfaces gráficas, sendo ela baseada em seu tamanho, e começando do
-            maior para o menor, assim como as heading tags do HTML, H1, H2, H3, e assim por diante.
-            
+            <h3>Informação</h3> 
+            Organizar a informação com clareza e objetividade, para facilitar o acesso a informação.
             <br>
+            <h3>Acessibilidade</h3>
+            Para qualquer desenvolvimento, é importante pensar na acessibilidade.
+            Essa dica é muito importante para um projeto de design funcional.
+            Quando desenvolvemos um novo produto é necessário analisar bem o público-alvo. 
+            Um produto bem feito é o que pode ser acessado por qualquer pessoa que tenha interesse.
+            É muito importante usar técnicas adequadas para garantir que qualquer usuário, independente de necessidades especiais, acesse o conteúdo
             <br>
-            <div class="list-h1">
-            <Listbox v-model="selectedCity" :options="h1" optionLabel="name" />
-            </div>
+            <h3>Design Gráfico</h3>
+            Melhora a experiência do usuário, e auxilia na realização das tarefas. O design gráfico deve ser envolvente, ou seja, chamar a atenção
+            do usuário. 
             <br>
-            <div class="list-h2">
-            <Listbox v-model="selectedCity" :options="h2" optionLabel="name" />
-            </div>
+            Os usuários são naturalmente atraídos por designs bonitos, mas também podem se sentir atraídos pela funcionalidade e facilidade de uso
             <br>
-            <div class="list-h3">
-            <Listbox v-model="selectedCity" :options="h3" optionLabel="name" />
-            </div>
+            <h3>Design Responsivo</h3>
+            O design responsivo é praticamente uma necessidade hoje em dia. Mais pessoas estão acessando e consumindo conteúdos 
+            através dos mais diversos dispositivos, seja tablets, smartphones ou computadores.
             <br>
-            <div class="list-h4">
-            <Listbox v-model="selectedCity" :options="h4" optionLabel="name" />
-            </div>
+            Por isso é de extrema importância garantir que ele estará pronto para ser aberto e funcionar corretamente em qualquer um desses aparelhos e navegadores.
             <br>
-            <h2>Fontes</h2>
-            As fontes definidas são importantes para o design pois mantém uma coesão e legibilidade por parte do usuário
-            que vai usufruir desse design. Precisa ser adaptável para o design e flexível para o texto, o que é importante para a reutilização.
+            <h2>Concluimos que:</h2>
+            Trabalhar com design funciona é priorizar a navegação e a experiência do usuário no lugar da arte e da estética, 
+            que muitas vezes podem ir contra o que o cliente realmente espera. 
             <br>
-            <h2>Peso</h2>
-            <br>
-            O peso (weight) define a intensidade da espessura da letra na font utilizada, aplicando uma intensidade do negrito da letra.
-            <br>
-            <br>
-             <div class="list-peso">
-            <Listbox v-model="selectedCity" :options="peso" optionLabel="name" />
-            </div>
-            <br>
-            A imagem abaixo exemplifica as intensidades descritas.
+            O design funcional traz a visão da experiência do usuário, e com isso podemos traçar um meio de reutilização do design de interface de usuário.
             <br>
             <br>
-            <div>
-              <img class="tipog" src="../assets/tipog.png" alt="">
-            </div>
+            Mantendo a UX consistente podemos manter a consistência do UI também, o que pode acelerar o desenvolvimento, e gerando um retorno positivo como desenvolvedor e usuário.
           </Panel>
-          <div>
-            <button class="next" @click="goToPage()">Próxima</button>
+          <div class="btco">
+            <button class="next" @click="goToPage()">FeedBack</button>
           </div>
         </div>
-        
     </div>
-        
   <div class="layout-topbar">
       
       <div class="sg">
-          <i class="mt" @click="getSg()">Guia de Estilo</i>
+          <i class="mt">Design Funcional</i>
           <br>
           <br>
           <br>
-            <router-link class="topic" to="/colors-pallet"> Paleta de Cores </router-link>
-            <br>
-            <br>
-            <router-link class="topic" to="/tipography"> Tipografia </router-link>
-            <br>
-            <br>
-            <router-link class="topic" to="/regras"> Grids </router-link>
+            <router-link class="topic" to="/fundamentos"> Fundamentos </router-link>
+
       </div>
   </div>
 </template>
@@ -105,14 +88,10 @@ export default {
   components: { },
   name: "StyleGuidePage",
   methods:{
-    getSg(){
-          this.$router.push({ path: '/sgpage'})
-      },
-      goToPage(){
-          this.$router.push({ path: '/regras'})
+    goToPage(){
+          this.$router.push({ path: '/primevue'})
       }
   }
-
 }
 </script>
 
@@ -120,7 +99,13 @@ export default {
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-
+.body, html {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  background: #FFFFFF;  
+  
+  } 
 
 .c-example{
   display: flex;

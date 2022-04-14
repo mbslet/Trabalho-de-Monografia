@@ -5,6 +5,13 @@ import SgPage from '../views/SgPage'
 import ColorsPallet from  '../views/ColorsPallet'
 import Tipografia from  '../components/Tipografia'
 import RegraEscrita from '../components/RegraEscrita'
+import ComponentsPage from '../views/ComponentsPage'
+import DesignAtomico from '../components/DesignAtomico'
+import MaterialDesign from '../components/MaterialDesign'
+import PrimeVue from '../components/PrimeVue'
+import DesignFuncional from  '../views/DesignFuncional'
+import Fundamentos from '../components/Fundamentos'
+import Feedback from '../views/Feedback'
 
 const routes = [
   {
@@ -23,6 +30,11 @@ const routes = [
     component: SgPage
   },
   {
+    path: '/components-page',
+    name: 'Componentes',
+    component: ComponentsPage
+  },
+  {
     path: '/colors-pallet',
     name: 'Paleta de Cores',
     component: ColorsPallet
@@ -36,6 +48,36 @@ const routes = [
     path: '/regras',
     name: 'Regras de Escritas',
     component: RegraEscrita
+  },
+  {
+    path: '/designatomico',
+    name: 'Design Atomic',
+    component: DesignAtomico
+  },
+  {
+    path: '/material',
+    name: 'Material Design',
+    component: MaterialDesign
+  },
+  {
+    path: '/primevue',
+    name: 'Prime Vue',
+    component: PrimeVue
+  },
+  {
+    path: '/funcional',
+    name: 'Design Funcional',
+    component: DesignFuncional
+  },
+  {
+    path: '/fundamentos',
+    name: 'Fundamentos',
+    component: Fundamentos
+  },
+  {
+    path: '/feedback',
+    name: 'Feedback',
+    component: Feedback
   },
   {
     path: '/about',
