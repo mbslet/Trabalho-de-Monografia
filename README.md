@@ -48,4 +48,4 @@ Vai aparecer uma url e basta dar um 'ctrl'+click em cima da url ou copie e cole 
 
 ## Feedback
 
-Ao terminar, responda esse [formulário](https://docs.google.com/forms/d/e/1FAIpQLSfEokQLSUyID9r9ROmKikKZh8m95zl0jV5d1S62AaqCqab-xw/viewform) para podermos coletar seu feedback e assim melhorarmos o guia :)
+Ao terminar, responda esse [formulário](https://forms.gle/UeGhn6YgQQn4ZDgM6) para podermos coletar seu feedback e assim melhorarmos o guia :)
