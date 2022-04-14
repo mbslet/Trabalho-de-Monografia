@@ -155,6 +155,9 @@
             <br>
 
           </Panel>
+          <div class="btco">
+            <button class="next" @click="goToPage()">Design Funcional</button>
+          </div>
         </div>
     </div>
   <div class="layout-topbar">
@@ -167,10 +170,12 @@
             <router-link class="topic" to="/designatomico"> Design Atômico </router-link>
             <br>
             <br>
-            <router-link class="topic" to="/material"> Frameworks </router-link>
+            <router-link class="topic" to="/material"> Material Design </router-link>
             <br>
             <br>
-            <router-link class="topic" to="/regras"> bla </router-link>
+            <router-link class="topic" to="/primevue"> Prime Vue </router-link>
+            <br>
+            <br>   
       </div>
   </div>
 </template>
@@ -192,7 +197,11 @@ export default {
     },
   components: { },
   name: "MaterialDesign",
-
+  methods:{
+    goToPage(){
+          this.$router.push({ path: '/funcional'})
+      }
+  }
 }
 </script>
 
@@ -331,14 +340,13 @@ a:link {
 .context{
       display: grid;
         grid-template-columns: 100%;
-
     position: fixed;
     height: 50px;
     padding: 1em 1em 1em 1em;
     color: #292929;
     z-index: 999;
     margin-top: 5vh;
-    margin-left: 65vh;
+    margin-left: 55vh;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 
@@ -353,7 +361,7 @@ a:link {
 .sub-text{
     overflow-y: scroll;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -365,7 +373,7 @@ a:link {
   padding: 20px;
   width: 250vh;
   height: 10px;
-  margin-top: -9.5vh;
+  margin-top: -2vh;
   margin-left: -2vh;
   background-color: #FFFFFF;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.218);

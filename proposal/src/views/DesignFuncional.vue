@@ -12,6 +12,9 @@
     
 
         </div>
+        <div class="btdf">
+            <button class="next" @click="goToPage()">Próxima</button>
+          </div>
        
     </div>
   <div class="layout-topbar">
@@ -42,7 +45,11 @@ export default {
     },
   components: { },
   name: "StyleGuidePage",
-
+  methods:{
+    goToPage(){
+          this.$router.push({ path: '/fundamentos'})
+      }
+  }
 }
 </script>
 
@@ -56,7 +63,10 @@ export default {
   height: 100%;
   
   } 
-
+.btdf{
+  margin-top: 30vh;
+  margin-left: 10vh;
+}
 .layout-topbar {
     position: fixed;
     height: 50px;
@@ -138,7 +148,7 @@ export default {
   padding: 20px;
   width: 250vh;
   height: 10px;
-  margin-top: -9.5vh;
+  margin-top: -2vh;
   margin-left: -2vh;
   background-color: #FFFFFF;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.218);

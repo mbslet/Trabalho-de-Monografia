@@ -60,11 +60,10 @@ export default {
 }
 .btlp{
   margin-left: 90vh;
-  background-color: #4EBC86;
 }
 .subtitle{
     font-family: 'Roboto', sans-serif;
-    color: #292929;
+    color: #626c66;
     font-size: 40px;
     margin-left: 10vh;
     margin-top: -15vh;

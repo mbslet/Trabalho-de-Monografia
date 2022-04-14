@@ -58,6 +58,9 @@
 
             
           </Panel>
+          <div class="btco">
+          <button class="next" @click="goToPage()">Próxima</button>
+      </div>
         </div>
     </div>
   <div class="layout-topbar">
@@ -90,7 +93,11 @@ export default {
     },
   components: { },
   name: "DesignAtomico",
-
+  methods:{
+    goToPage(){
+          this.$router.push({ path: '/material'})
+      }
+  }
 }
 </script>
 
@@ -252,7 +259,7 @@ export default {
   padding: 20px;
   width: 250vh;
   height: 10px;
-  margin-top: -9.5vh;
+  margin-top: -2vh;
   margin-left: -2vh;
   background-color: #FFFFFF;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.218);

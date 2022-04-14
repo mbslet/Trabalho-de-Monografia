@@ -4,19 +4,19 @@
       <div class="elements">
           <div class="bts">
             <button class="bt" @click="goToSgPage()">Guia de Estilo</button>
-            <button class="bt-c">Componentes</button>
-            <button class="bt-d">Design</button>
+            <button class="bt-c" @click="goToComp()">Componentes</button>
+            <button class="bt-d" @click="goToDesign()">Design</button>
           </div>
         <div class="sgcard">
           <StyleGuideCard @click="goToSgPage()"/>
         </div>
         
         <div class="ccard">
-          <ComponentsCard/>
+          <ComponentsCard @click="goToComp()"/>
         </div>
         
         <div class="dcard">
-          <DesignCard/>
+          <DesignCard @click="goToDesign()"/>
         </div>
       </div>
   </div>
@@ -34,7 +34,13 @@ export default {
   name: "ReusableList",
   methods:{
     goToSgPage(){
-   this.$router.push('/sgpage'); 
+        this.$router.push('/sgpage'); 
+      },
+      goToComp(){
+        this.$router.push('/components-page'); 
+      },
+      goToDesign(){
+        this.$router.push('/funcional'); 
       }
   }
 };
@@ -121,7 +127,7 @@ export default {
   padding: 20px;
   width: 250vh;
   height: 10px;
-  margin-top: -9.5vh;
+  margin-top: -2vh;
   margin-left: -2vh;
   background-color: #FFFFFF;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.218);

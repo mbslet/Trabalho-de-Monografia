@@ -8,19 +8,21 @@
         <div class="text">
             Um guia de estilo serve como base 
             para o desenvolvimento  <br>e é uma coleção de princípios, 
-            diretrizes e convenções reunidas em um <br>
-            meio único para definir uma aparência e comportamento unificados para <br>
-            produtos e serviços, muitos guias de estilo da web tendem <br>
-            não fazer referência aos guias de estilo tradicional, provavelmente devido <br>
+            diretrizes e convenções reunidas <br> em um 
+            meio único para definir uma aparência e comportamento<br> unificados para 
+            produtos e serviços, muitos guias de estilo da web<br> tendem
+            não fazer referência aos guias de estilo tradicional,<br> provavelmente devido
             para a grande diversidade de desenvolvedores da web. <br> Para um guia de estilo ser bem elaborado, deve conter informações sobre
             as cores escolhidas, tipografia definida, regras de escritas e elementos visuais como ícones e logo.
         </div>
-       
+       <div>
+          <button class="next" @click="goToPage()">Próxima</button>
+      </div>
     </div>
   <div class="layout-topbar">
       
       <div class="sg">
-          <i class="mt">Guia de Estilo</i>
+          <i class="mt" @click="getSg()">Guia de Estilo</i>
           <br>
           <br>
           <br>
@@ -37,6 +39,7 @@
 
 
 <script>
+
 export default {
     data() {
            return {
@@ -48,8 +51,13 @@ export default {
                 }
         }
     },
-  components: { },
+  components: {  },
   name: "StyleGuidePage",
+  methods:{
+    goToPage(){
+          this.$router.push({ path: '/colors-pallet'})
+      }
+  }
 
 }
 </script>
@@ -64,7 +72,19 @@ export default {
   height: 100%;
   
   } 
+.btsg{
+  margin-top: 5vh;
+  margin-left: 40vh;
+}
+.next{
+  background-color: #3c6d60;
+  width: 20vh;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 105vh;
 
+}
 .layout-topbar {
     position: fixed;
     height: 50px;
@@ -116,7 +136,7 @@ export default {
     color: #292929;
     z-index: 999;
     margin-top: 5vh;
-    margin-left: 65vh;
+    margin-left: 55vh;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 
@@ -146,7 +166,7 @@ export default {
   padding: 20px;
   width: 250vh;
   height: 10px;
-  margin-top: -9.5vh;
+  margin-top: -2vh;
   margin-left: -2vh;
   background-color: #FFFFFF;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.218);

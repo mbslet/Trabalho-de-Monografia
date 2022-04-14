@@ -25,12 +25,15 @@
             </div>
             
           </Panel>
+          <div>
+            <button class="next" @click="goToPage()">Componentes</button>
+          </div>
         </div>
     </div>
   <div class="layout-topbar">
       
       <div class="sg">
-          <i class="mt">Guia de Estilo</i>
+          <i class="mt" @click="getSg()">Guia de Estilo</i>
           <br>
           <br>
           <br>
@@ -60,6 +63,11 @@ export default {
     },
   components: { },
   name: "StyleGuidePage",
+  methods:{
+    goToPage(){
+          this.$router.push({ path: '/components-page'})
+      }
+  }
 
 }
 </script>

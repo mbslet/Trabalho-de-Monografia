@@ -9,7 +9,7 @@
     </template>
     <template #content>
         <h3 class="subtitle"> Guia de reutilização</h3>
-        <img class="da" src="../assets/da.png" >
+        <img class="desfun" src="../assets/desfun.png" >
 
     </template>
     <template #footer>
@@ -65,9 +65,9 @@ export default {
   margin-top: -12vh;
 
 }
-.da{
+.desfun{
   width: 30vh;
-  height: 15vh;
+  height: 20vh;
 }
 .circulo {
 width: 30px;

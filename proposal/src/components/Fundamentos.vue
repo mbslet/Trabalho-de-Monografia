@@ -41,6 +41,9 @@
             <br>
             Mantendo a UX consistente podemos manter a consistência do UI também, o que pode acelerar o desenvolvimento, e gerando um retorno positivo como desenvolvedor e usuário.
           </Panel>
+          <div class="btco">
+            <button class="next" @click="goToPage()">FeedBack</button>
+          </div>
         </div>
     </div>
   <div class="layout-topbar">
@@ -84,7 +87,11 @@ export default {
     },
   components: { },
   name: "StyleGuidePage",
-
+  methods:{
+    goToPage(){
+          this.$router.push({ path: '/primevue'})
+      }
+  }
 }
 </script>
 
@@ -234,7 +241,7 @@ export default {
   padding: 20px;
   width: 250vh;
   height: 10px;
-  margin-top: -9.5vh;
+  margin-top: -2vh;
   margin-left: -2vh;
   background-color: #FFFFFF;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.218);

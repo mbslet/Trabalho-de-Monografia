@@ -16,7 +16,7 @@ export default {
 <style scoped>
 .round {
     position: relative;
-    border: 3px solid #fff;
+    border: 3px solid #4EBC86;
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -27,7 +27,7 @@ span {
     height: 3px;
     margin:1px;
     width: 30px;
-    background: #fff;
+    background: #4EBC86;
     transition: 0.4s ease;
 }
 

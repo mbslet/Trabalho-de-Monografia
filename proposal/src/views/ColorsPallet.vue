@@ -29,6 +29,9 @@
               <div class="circulo c3"></div>
             </div>
           </Panel>
+          <div>
+            <button class="next" @click="goToPage()">Próxima</button>
+          </div>
         </div>
     </div>
   <div class="layout-topbar">
@@ -65,7 +68,11 @@ export default {
     },
   components: { },
   name: "StyleGuidePage",
-
+  methods:{
+    goToPage(){
+          this.$router.push({ path: '/tipography'})
+      }
+  }
 }
 </script>
 
@@ -190,7 +197,7 @@ export default {
   padding: 20px;
   width: 250vh;
   height: 10px;
-  margin-top: -9.5vh;
+  margin-top: -2vh;
   margin-left: -2vh;
   background-color: #626C66;
 }
