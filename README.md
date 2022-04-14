@@ -1,5 +1,19 @@
 # Guia de Reutilização de UI
 
+## Usando o git
+Caso você não tenha o git instalado em sua máquina, siga os seguintes passos:
+
+* Windows:
+http://git-scm.com/download/win
+
+* Linux(Ubuntu, Debian):
+sudo apt-get install git-all
+
+Em seguida, abra o terminal de sua máquina, e esecute o comando:
+`git init`
+Após esse passo, execute o seguinte comando para baixar a pasta do projeto na sua máquina:
+`git clone https://github.com/mbslet/Trabalho-de-Monografia.git`
+
 ## Para testar
 Instale o pacote Node para rodar a aplicação.
 
