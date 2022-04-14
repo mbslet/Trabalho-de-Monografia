@@ -148,7 +148,8 @@ export default {
   height: 10px;
   margin-top: -9.5vh;
   margin-left: -2vh;
-  background-color: #000;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.218);
 }
 .topic {
   font-family: 'Roboto', sans-serif;

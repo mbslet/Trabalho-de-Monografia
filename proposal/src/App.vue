@@ -3,6 +3,8 @@
       <router-link class="home" to="/"> Home </router-link>
       <router-link class="topic" to="/reusablelist"> Tópicos </router-link>
       <router-link to="/sgpage"> Guia de Estilo </router-link>
+      <router-link to="/components-page"> Componentes </router-link>
+
       <router-view v-slot="{ Component }">
         <transition name="slide">
           <component :is="Component" />

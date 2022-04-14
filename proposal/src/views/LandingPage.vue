@@ -11,7 +11,7 @@
    <div class="center-con">
     
     <div>
-        <animated-button @click="getCards()" href="#anchor"/>
+        <animated-button class="btlp" @click="getCards()" href="#anchor"/>
     </div>
 
 
@@ -56,7 +56,11 @@ export default {
     font-style: normal;
     font-weight: 500;
     font-size: 80px;
-    color: #F3EDFC;
+    color: #4EBC86;
+}
+.btlp{
+  margin-left: 90vh;
+  background-color: #4EBC86;
 }
 .subtitle{
     font-family: 'Roboto', sans-serif;
@@ -82,11 +86,12 @@ export default {
 
 .topbar{
   padding: 20px;
-  width: 100vh;
+  width: 250vh;
   height: 10px;
-  margin-top: -9.5vh;
+  margin-top: 5vh;
   margin-left: -2vh;
-  background-color: #000;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.218);
 }
 
 </style>

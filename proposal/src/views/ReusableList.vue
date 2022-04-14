@@ -2,24 +2,22 @@
   <div>
       <div class="topbar"></div>
       <div class="elements">
-        <div class="bts">
-          <button class="bt" @click="goToSgPage()">Guia de Estilo</button>
-          <button class="bt-c">Componentes</button>
-          <div class="div-test">
+          <div class="bts">
+            <button class="bt" @click="goToSgPage()">Guia de Estilo</button>
+            <button class="bt-c">Componentes</button>
             <button class="bt-d">Design</button>
           </div>
+        <div class="sgcard">
+          <StyleGuideCard @click="goToSgPage()"/>
         </div>
-      <div class="sgcard">
-        <StyleGuideCard @click="goToSgPage()"/>
-      </div>
-      
-      <div class="ccard">
-        <ComponentsCard/>
-      </div>
-      
-      <div class="dcard">
-        <DesignCard/>
-      </div>
+        
+        <div class="ccard">
+          <ComponentsCard/>
+        </div>
+        
+        <div class="dcard">
+          <DesignCard/>
+        </div>
       </div>
   </div>
 </template>
@@ -77,31 +75,30 @@ export default {
     margin-top: -2vh;
 }
 .bts{
+  display: grid;
   margin-top: 40vh;
-  display: flex;
-  padding: 40px;
   margin-left: 45vh;
 }
-.bt{
-  padding-left: 30px;
-  background-color: #4EBC86;
-  color: white;
-  font-size: 20px;
-  height: 7vh;
-  width: 55vh;
-  border-radius: 25px;
-  margin-left: -25vh;
-
-}
-.bt-c{
-  padding: 10px;
+.bt{  
   background-color: #4EBC86;
   color: white;
   font-size: 20px;
   height: 7vh;
   width: 35vh;
   border-radius: 25px;
-  margin-left: 50vh;
+  margin-left: -25vh;
+  margin-top: -10vh;
+
+}
+.bt-c{  
+  background-color: #4EBC86;
+  color: white;
+  font-size: 20px;
+  height: 7vh;
+  width: 35vh;
+  border-radius: 25px;
+  margin-left: 40vh;
+  margin-top: -10vh;
 }
 .bt-d{
   background-color: #4EBC86;
@@ -110,11 +107,12 @@ export default {
   height: 7vh;
   width: 35vh;
   border-radius: 25px;
-  margin-left: 52vh;
+  margin-left: 103vh;
+  margin-top: -10vh;
 
 }
 .elements{
-  margin-top: -30vh;
+  margin-top: -10vh;
 }
 .div-test{
   margin-left: -10vh;
@@ -125,6 +123,7 @@ export default {
   height: 10px;
   margin-top: -9.5vh;
   margin-left: -2vh;
-  background-color: #000;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.218);
 }
 </style>

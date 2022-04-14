@@ -73,13 +73,6 @@ export default {
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-.body, html {
-  position: relative;
-  width: 1000px;
-  height: 100%;
-  background: #FFFFFF;  
-  
-  } 
 
 .c-example{
   display: flex;
