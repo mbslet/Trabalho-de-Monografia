@@ -198,7 +198,7 @@ export default {
 }
 
 .sg{
-    margin-top: -65vh;
+    margin-top: -165%;
 }
 .mt{
     font-family: 'Roboto', sans-serif;
@@ -232,7 +232,7 @@ export default {
     color: #292929;
     z-index: 999;
     margin-top: 5vh;
-    margin-left: 65vh;
+    margin-left: 50vh;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 

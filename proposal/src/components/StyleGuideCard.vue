@@ -9,13 +9,10 @@
     </template>
     <template #content>
         <h3 class="subtitle"> Guia de reutilização</h3>
-        <img class="palet" src="../assets/paleta.png" alt="">
+        <img class="palet" src="../assets/palet.png" alt="">
 
     </template>
-    <template #footer>
-        <Button icon="pi pi-check" label="Save" />
-        <Button icon="pi pi-times" label="Cancel" class="p-button-secondary" style="margin-left: .5em" />
-    </template>
+
 
     </Card>
   </div>
@@ -54,7 +51,7 @@ export default {
 .title{
     font-size: 20px;
     color: black;
-    margin-top: -16vh;
+    margin-top: -11%;
     margin-left: 6vh;
 }
 .subtitle{
@@ -74,6 +71,6 @@ export default {
 width: 30px;
 height: 30px;
 border-radius: 50%;
-background-color: #D16002;
+background-color: #626c66;
 }
 </style>

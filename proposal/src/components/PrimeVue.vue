@@ -6,7 +6,7 @@
           <Panel class="sub-text" header="Prime Vue" >
             <div class="bar"></div>
             <br>
-            Prime Vue é um rico conjunto de componentes nativos de código aberto para Vue. Esse site guia é baseado em componentes reutilizáveis pelo
+            Prime Vue é um rico conjunto de componentes nativos de código aberto para a framework Vue. Esse site guia é baseado em componentes reutilizáveis pelo
             Prime vue. 
             <br>
             <br>
@@ -313,7 +313,7 @@ a:link {
 }
 
 .sg{
-    margin-top: -65vh;
+    margin-top: -165%;
 }
 .mt{
     font-family: 'Roboto', sans-serif;
@@ -346,7 +346,7 @@ a:link {
     color: #292929;
     z-index: 999;
     margin-top: 5vh;
-    margin-left: 55vh;
+    margin-left: 50vh;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 

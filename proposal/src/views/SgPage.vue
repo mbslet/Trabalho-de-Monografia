@@ -87,7 +87,7 @@ export default {
 }
 .layout-topbar {
     position: fixed;
-    height: 50px;
+    height: 100%;
     padding: 36em 3em 5em 2em;
     background-color: #4EBC86;
     color: #ffffff;
@@ -105,7 +105,7 @@ export default {
 }
 
 .sg{
-    margin-top: -65vh;
+    margin-top: -165%;
 }
 .mt{
     font-family: 'Roboto', sans-serif;
@@ -136,7 +136,7 @@ export default {
     color: #292929;
     z-index: 999;
     margin-top: 5vh;
-    margin-left: 55vh;
+    margin-left: 50vh;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 
