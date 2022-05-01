@@ -42,7 +42,7 @@
             Mantendo a UX consistente podemos manter a consistência do UI também, o que pode acelerar o desenvolvimento, e gerando um retorno positivo como desenvolvedor e usuário.
           </Panel>
           <div class="btco">
-            <button class="next" @click="goToPage()">FeedBack</button>
+            <button class="next" @click="goToPage()">Próxima</button>
           </div>
         </div>
     </div>
@@ -54,7 +54,8 @@
           <br>
           <br>
             <router-link class="topic" to="/fundamentos"> Fundamentos </router-link>
-
+          <br><br>
+           <router-link class="topic" to="/aplicacao"> Aplicação </router-link>
       </div>
   </div>
 </template>
@@ -89,7 +90,7 @@ export default {
   name: "StyleGuidePage",
   methods:{
     goToPage(){
-          this.$router.push({ path: '/feedback'})
+          this.$router.push({ path: '/aplicacao'})
       }
   }
 }
@@ -213,7 +214,7 @@ export default {
     padding: 1em 1em 1em 1em;
     color: #292929;
     z-index: 999;
-    margin-top: 5vh;
+    margin-top: 1vh;
     margin-left: 55vh;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
@@ -221,7 +222,7 @@ export default {
 }
 .text{
     padding: 10px;
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: #575555;

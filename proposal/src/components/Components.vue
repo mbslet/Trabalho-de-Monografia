@@ -33,6 +33,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .body, html {
     font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
 
 }
 

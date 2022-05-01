@@ -25,6 +25,8 @@
           <br>
           <br>
             <router-link class="topic" to="/fundamentos"> Fundamentos </router-link>
+            <br><br>
+            <router-link class="topic" to="/aplicacao"> Aplicação </router-link>
             <br>
       </div>
   </div>

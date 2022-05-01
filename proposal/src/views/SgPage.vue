@@ -1,7 +1,8 @@
 <template>
     <div class="topbar"></div>
 
-    <div class="context">
+   <div class="every">
+      <div class="context">
         Guia de Estilo
         <div class="bar">
         </div>
@@ -12,10 +13,17 @@
             meio único para definir uma aparência e comportamento<br> unificados para 
             produtos e serviços, muitos guias de estilo da web<br> tendem
             não fazer referência aos guias de estilo tradicional,<br> provavelmente devido
-            para a grande diversidade de desenvolvedores da web. <br> Para um guia de estilo ser bem elaborado, deve conter informações sobre
+            para a grande diversidade de desenvolvedores da web. <br> Para um guia de estilo ser bem elaborado, deve conter informações sobre <br>
             as cores escolhidas, tipografia definida, regras de escritas e elementos visuais como ícones e logo.
-        </div>
+        
+          <h4 class>Onde utilizar o seu Guia de Estilo?</h4>
+        O guia de estilo é uma base para o desenvolvimento em empresas ou organizações. <br>Imagina que você precisa desenvolver um projeto
+        novo a cada dois meses na sua empresa, <br> e os padrões serão sempre os mesmos. Se a empresa tiver um guia de estilo, <br> todas a informações
+        visuais necessárias estarão lá, não é preciso definir nada novo <br> pois a paleta de cores principal, tipografia, espaçamentos e definição de grid <br>
+        estarão salvos no documento de Guia de Estilo, facilitando as vezes em que vai utilizar os<br> mesmos esquelos para os projetos. 
        <div>
+
+       </div>
           <button class="next" @click="goToPage()">Próxima</button>
       </div>
     </div>
@@ -35,6 +43,7 @@
             <router-link class="topic" to="/regras"> Grids </router-link>
       </div>
   </div>
+   </div>
 </template>
 
 
@@ -72,6 +81,9 @@ export default {
   height: 100%;
   
   } 
+.howto{
+  font-size: 20px;
+}
 .btsg{
   margin-top: 5vh;
   margin-left: 40vh;
@@ -135,7 +147,7 @@ export default {
     padding: 1em 1em 1em 1em;
     color: #292929;
     z-index: 999;
-    margin-top: 5vh;
+    margin-top: -3vh;
     margin-left: 50vh;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
@@ -147,11 +159,12 @@ export default {
     background-color: #455F58;
 }
 .text{
-    padding: 10px;
-    font-size: 25px;
+    padding: 20px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: #575555;
+    margin-top: 5vh;
 }
 .sub-text{
     width: 1000px;

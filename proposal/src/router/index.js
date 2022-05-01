@@ -12,6 +12,7 @@ import PrimeVue from '../components/PrimeVue'
 import DesignFuncional from  '../views/DesignFuncional'
 import Fundamentos from '../components/Fundamentos'
 import Feedback from '../views/Feedback'
+import Aplicacao from '../components/Aplicacao'
 
 const routes = [
   {
@@ -78,6 +79,11 @@ const routes = [
     path: '/feedback',
     name: 'Feedback',
     component: Feedback
+  },
+  {
+    path: '/aplicacao',
+    name: 'Aplicação',
+    component: Aplicacao
   },
   {
     path: '/about',
