@@ -4,9 +4,9 @@
 
       </div>
     <div class="display-flex text">
-        <h1 class="title">Modelo de Reutilização
-        de Interface de Usuário:</h1>
-        <h2 class="subtitle">Um guia de aplicações</h2>
+        <h1 class="title">iReuse:</h1>
+        <h2 class="subtitle">Guia de Orientação à Reutilização
+de Interface de Usuário</h2>
     </div>
    <div class="center-con">
     
@@ -59,7 +59,7 @@ export default {
     color: #4EBC86;
 }
 .btlp{
-  margin-left: 90vh;
+  margin-left: 85vh;
 }
 .subtitle{
     font-family: 'Roboto', sans-serif;
@@ -71,6 +71,7 @@ export default {
 }
 .text{
     margin-top: 10vh;
+    width: 90vh;
 }
 
 
