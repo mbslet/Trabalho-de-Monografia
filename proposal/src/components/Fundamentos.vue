@@ -1,7 +1,7 @@
 <template>
     <div class="topbar"></div>
 
-    <div class="context">        
+    <div class="contextf">        
         <div>
           <Panel class="sub-text" header="Fundamentos do Design Funcional" >
             <div class="bar"></div>
@@ -205,7 +205,7 @@ export default {
     margin-top: 5vh;
     margin-left: 1vh;   
 }
-.context{
+.contextf{
       display: grid;
         grid-template-columns: 100%;
 
@@ -215,7 +215,7 @@ export default {
     color: #292929;
     z-index: 999;
     margin-top: 1vh;
-    margin-left: 55vh;
+    margin-left: 62vh;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 

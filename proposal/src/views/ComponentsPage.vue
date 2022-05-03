@@ -1,11 +1,11 @@
 <template>
     <div class="topbar"></div>
 
-    <div class="context">
+    <div class="contextcp">
         Componentes
         <div class="bar">
         </div>
-        <div class="text">
+        <div class="textcp">
            Um componente pode ser um pacote de código a ser desenvolvido de forma independente e entregue como uma unidade, pode ser
            parte de um código reutilizável na sua interface e desenvolvimento, e pode ter uma ou mais funções dentro do sistema.
            Os componentes trabalham em conjunto para criar padrões e experiências intuitivas.
@@ -127,7 +127,7 @@ export default {
     margin-top: 5vh;
     margin-left: 1vh;   
 }
-.context{
+.contextcp{
     position: fixed;
     height: 50px;
     padding: 1em 1em 1em 1em;
@@ -144,7 +144,7 @@ export default {
     width: 50vh;
     background-color: #455F58;
 }
-.text{
+.textcp{
     padding: 10px;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
