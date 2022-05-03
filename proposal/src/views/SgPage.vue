@@ -2,19 +2,19 @@
     <div class="topbar"></div>
 
    <div class="every">
-      <div class="context">
+      <div class="contextsg">
         Guia de Estilo
         <div class="bar">
         </div>
-        <div class="text">
+        <div class="textsg">
             Um guia de estilo serve como base 
             para o desenvolvimento  <br>e é uma coleção de princípios, 
             diretrizes e convenções reunidas <br> em um 
             meio único para definir uma aparência e comportamento<br> unificados para 
             produtos e serviços, muitos guias de estilo da web<br> tendem
             não fazer referência aos guias de estilo tradicional,<br> provavelmente devido
-            para a grande diversidade de desenvolvedores da web. <br> Para um guia de estilo ser bem elaborado, deve conter informações sobre <br>
-            as cores escolhidas, tipografia definida, regras de escritas e elementos visuais como ícones e logo.
+            para a grande diversidade de desenvolvedores da web. <br> <br>Para um guia de estilo ser bem elaborado, deve conter informações sobre <br>
+            as cores escolhidas, tipografia definida, regras de escritas e <br>elementos visuais como ícones e logo.
         
           <h4 class>Onde utilizar o seu Guia de Estilo?</h4>
         O guia de estilo é uma base para o desenvolvimento em empresas ou organizações. <br>Imagina que você precisa desenvolver um projeto
@@ -141,7 +141,7 @@ export default {
     margin-top: 5vh;
     margin-left: 1vh;   
 }
-.context{
+.contextsg{
     position: fixed;
     height: 50px;
     padding: 1em 1em 1em 1em;
@@ -158,7 +158,7 @@ export default {
     width: 50vh;
     background-color: #455F58;
 }
-.text{
+.textsg{
     padding: 20px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
